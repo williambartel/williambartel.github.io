@@ -27,4 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I was born in Providence, Rhode Island and lived there until going to Villanova University to study mechanical engineering and play football. Afterwards, I went to the University of Notre Dame for my PhD, which I am in my third year of pursuing. I love learning how things work and sharing what I love through teaching and mentorship. My research is focused on integrating model-based and learning-based control strategies for the control of legged robots, and I am also deeply interested in the ethics of technology and how we can best use robots to encourage human flourishing. 
+I was born in Providence, Rhode Island and lived there until going to Villanova University to study mechanical engineering and play football. Afterwards, I went to the University of Notre Dame for my PhD, which I am in my third year of pursuing. 
+
+I love learning how things work and sharing what I love through teaching and mentorship. My research is focused on integrating model-based and learning-based control strategies for the control of legged robots, and I am also deeply interested in the ethics of technology and how we can best use robots to encourage human flourishing. 
