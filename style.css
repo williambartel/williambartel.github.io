@@ -1,0 +1,117 @@
+:root {
+  --bg: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e6e6e8;
+  --accent: #0c2340; /* Notre Dame navy */
+  --link: #1f5fa8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121214;
+    --text: #ececee;
+    --muted: #9a9aa0;
+    --line: #2a2a2e;
+    --accent: #c99700; /* Notre Dame gold */
+    --link: #7fb0ec;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.65 "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 20px 40px;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.tagline { margin: 0 0 14px; color: var(--muted); }
+
+.links { display: flex; gap: 18px; flex-wrap: wrap; font-weight: 500; }
+
+section { margin-bottom: 40px; }
+
+h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+  margin: 0 0 20px;
+}
+
+h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+
+p { margin: 0; }
+
+.item { margin-bottom: 22px; }
+.item p + p { margin-top: 4px; }
+
+.title { font-weight: 600; }
+.meta { color: var(--muted); font-size: 0.92rem; }
+.date { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+
+.row, .plain li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.plain { list-style: none; padding: 0; margin: 0; }
+.plain li { padding: 6px 0; }
+
+footer {
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+  main { padding-top: 40px; }
+  .hero { flex-direction: column; text-align: center; gap: 20px; }
+  .links { justify-content: center; }
+  .avatar { width: 128px; height: 128px; }
+  .row, .plain li { flex-direction: column; gap: 0; }
+}
